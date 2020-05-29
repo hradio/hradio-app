@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/settings"
+        android:id="@+id/settings"/>
+  <!--  <item android:title="@string/data_collection_options"
+        android:id="@+id/data_collection_menu"/>
+    <item android:title="@string/enable_recommendation"
+        android:id="@+id/recommendation_preferences_menu"/>
+
+    <item android:title="@string/disable_spotify"
+        android:id="@+id/spotify_menu"/>
+     -->
+
+    <item android:title="CDTS"
+        android:id="@+id/cdts_menu"
+        app:showAsAction="always"
+        android:icon="@drawable/cdts_white_24dp"
+        android:visible="true"/>
+    <item android:title="@string/questionaire"
+        android:id="@+id/questionaire_menu"
+        android:visible="false"/>
+    <item android:title="@string/playlists_text"
+        android:id="@+id/playlist_menu"/>
+    <item android:title="@string/radio_web_toggle"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_web_white_24"
+        android:id="@+id/radio_web_toggle_menu"/>
+    <!--
+    <item android:title="@string/car_mode"
+        android:icon="@drawable/baseline_directions_car_white_24"
+        app:showAsAction="ifRoom"
+        android:id="@+id/car_mode_menu"/>
+       <item android:title="@string/switch_theme"
+         android:id="@+id/switch_theme"/>
+     -->
+ </menu>

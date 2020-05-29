@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/car_playback_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="58dp">
+
+        <ImageView
+            android:id="@+id/car_cover_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="carCoverImage"
+            app:layout_constraintWidth_max="400dp"
+            app:layout_constraintWidth_min="300dp"
+            app:layout_constraintHeight_max="300dp"
+            app:layout_constraintHeight_min="200dp"
+            app:layout_constraintBottom_toBottomOf="@id/buttons_panel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp" />
+
+
+        <lmu.hradio.hradioshowcase.view.component.TrackLikeButton
+            android:id="@+id/car_track_like_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="64dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@id/title_panel"
+            app:layout_constraintStart_toEndOf="@id/car_cover_image"
+            app:layout_constraintTop_toTopOf="@id/title_panel"
+            android:layout_marginLeft="64dp" />
+
+
+        <LinearLayout
+            android:id="@+id/title_panel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/buttons_panel"
+            app:layout_constraintStart_toEndOf="@id/car_track_like_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/car_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textColor="?attr/colorPrimaryText"
+                android:textSize="@dimen/car_primary_text"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeMinTextSize="20sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/car_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textColor="?attr/colorSecondaryText"
+                android:textSize="@dimen/car_secondary_text"
+                app:autoSizeMaxTextSize="25sp"
+                app:autoSizeMinTextSize="19sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttons_panel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/car_cover_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/car_cover_image"
+            android:layout_marginLeft="10dp">
+
+            <ImageButton
+                android:id="@+id/car_live_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="jumpToLive"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_skip_next_white_64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/car_live_button"
+                app:layout_constraintStart_toEndOf="@id/car_podcast_button"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/car_back_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="carBack"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_skip_previous_white_64dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/car_play_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="carPlay"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_play_white_64dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/car_pause_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:contentDescription="carPause"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_pause_white_64dp"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <ImageButton
+                    android:id="@+id/car_next_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:selectableItemBackground"
+                    android:contentDescription="carLive"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_skip_next_white_64dp" />
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/car_podcast_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="carPodcast"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_podcast_white_64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="5dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/car_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="?attr/colorSecondaryText"
+            android:textSize="@dimen/car_secondary_text"
+            app:layout_constraintBottom_toBottomOf="@id/car_seekbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/car_seekbar"
+            android:layout_marginRight="5dp" />
+
+        <SeekBar
+            android:id="@+id/car_seekbar"
+            style="@style/ProgressBarTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:progressDrawable="@drawable/seek_bar"
+            android:thumb="@drawable/seek_thumb"
+            app:layout_constraintEnd_toStartOf="@+id/car_progress_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/car_cover_image"
+            app:layout_constraintBottom_toTopOf="@id/car_timeshift_list"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/car_timeshift_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/car_seekbar"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/drag_up_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/car_peak_height"
+        app:layout_behavior=".view.component.LockableDragBottomSheetBehavior">
+
+        <ImageView
+            android:id="@+id/car_epg_badge"
+            android:layout_width="@dimen/car_peak_height"
+            android:layout_height="@dimen/car_peak_height"
+            android:layout_marginStart="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/epg_badge"
+            app:layout_constraintBottom_toBottomOf="@id/programme_panel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/programme_panel"
+            android:layout_marginLeft="15dp" />
+
+        <LinearLayout
+            android:id="@+id/programme_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/car_peak_height"
+            android:layout_marginStart="10dp"
+            android:background="?attr/colorPrimary"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@id/car_epg_badge"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/car_programm_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimaryText"
+                android:textSize="@dimen/car_secondary_text"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_weight="1" />
+
+            <TextView
+                android:id="@+id/car_programm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textAlignment="center"
+                android:textColor="?attr/colorSecondaryText"
+                android:textSize="@dimen/car_tertiary_text" />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/car_epg_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/programme_panel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

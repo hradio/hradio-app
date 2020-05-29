@@ -1,0 +1,50 @@
+package lmu.hradio.hradioshowcase.model.view;
+
+public enum UserActionEnum {
+    Undefined,                //0
+    Play,                     //1
+    Pause,                    //2
+    JumpToLive,               //3
+    SkipBack,                 //4
+    Spotify,                  //5
+    Podcast,                  //6
+    ServiceChanged,           //7
+    ProgressBarChanged,       //8
+    Timeshift,                //9
+    AppStarted,               //10
+    AppClosed,                //11
+    FavoriteAdded,            //12
+    FavoriteRemoved,          //13
+    Recommendations,          //14
+    EPG,                      //15
+    ItemLiked,                //16
+    ItemDisliked,             //17
+    TBD1,                     //18
+    TBD2,                     //19
+    TBD3,                     //20
+    DropoutEvaluation_1,      //21
+    DropoutEvaluation_2,      //22
+    DropoutEvaluation_3,      //23
+    DropoutEvaluation_4,      //24
+    DropoutEvaluation_5,      //25
+    SkipEvaluation_1,         //26
+    SkipEvaluation_2,         //27
+    SkipEvaluation_3,         //28
+    SkipEvaluation_4,         //29
+    SkipEvaluation_5,         //30
+    TimeshiftEvaluation_1,    //31
+    TimeshiftEvaluation_2,    //32
+    TimeshiftEvaluation_3,    //33
+    TimeshiftEvaluation_4,    //34
+    TimeshiftEvaluation_5,    //35
+    FavoritesEvaluation_1,    //36
+    FavoritesEvaluation_2,    //37
+    FavoritesEvaluation_3,    //38
+    FavoritesEvaluation_4,    //39
+    FavoritesEvaluation_5,    //40
+    TBDEvaluation_1,          //41
+    TBDEvaluation_2,          //42
+    TBDEvaluation_3,          //43
+    TBDEvaluation_4,          //44
+    TBDEvaluation_5           //45
+}

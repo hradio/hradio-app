@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_container"
+    android:background="?attr/timeshift_background"
+    android:layout_margin="4dp"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/skip_cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:src="@drawable/outline_radio_white_48dp" />
+
+    <ProgressBar
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:id="@+id/skip_loading_progress"/>
+
+    <TextView
+        android:id="@+id/song_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/secondary_text_size"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimaryText"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/artist_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/tertiary_text_size"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:textColor="?attr/colorSecondaryText"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

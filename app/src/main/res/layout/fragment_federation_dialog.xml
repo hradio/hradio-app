@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".view.fragment.dialog.FederationDialogFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/primary_text_size"
+        android:textColor="?attr/colorPrimaryText"
+        android:text="@string/configure_federation"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/keywords_spinner"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="?attr/colorSecondary">
+
+        <TextView
+            android:id="@+id/keywords_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keywords_name"
+            android:textColor="?attr/colorPrimaryText"
+            android:textSize="@dimen/primary_text_size"
+            android:padding="@dimen/mini_player_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selected_keywords_text_view"
+            android:textColor="?attr/colorSecondaryText"
+            android:textSize="@dimen/secondary_text_size"
+            android:paddingBottom="@dimen/mini_player_padding"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/keywords_title"
+            android:paddingLeft="@dimen/activity_horizontal_margin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/genre_spinner"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="?attr/colorSecondary">
+
+        <TextView
+            android:id="@+id/genre_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genre_name"
+            android:textColor="?attr/colorPrimaryText"
+            android:textSize="@dimen/primary_text_size"
+            android:padding="@dimen/mini_player_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selected_genres_text_view"
+            android:textColor="?attr/colorSecondaryText"
+            android:textSize="@dimen/secondary_text_size"
+            android:paddingBottom="@dimen/mini_player_padding"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:singleLine="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genre_title"
+            android:paddingLeft="@dimen/activity_horizontal_margin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSecondary"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:background="?attr/colorSecondary"
+            android:padding="@dimen/cardview_search_form_padding"
+            android:textColorHint="?attr/colorSecondaryText"
+            android:layout_marginRight="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_depth_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/search_depth"
+                android:inputType="number"
+                android:textColor="?attr/colorPrimaryText"
+                android:textColorHint="?attr/colorSecondaryText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="?attr/colorSecondary"
+            android:padding="@dimen/cardview_search_form_padding"
+            android:textColorHint="?attr/colorSecondaryText"
+            android:layout_marginLeft="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_width_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/search_width"
+                android:inputType="number"
+                android:textColor="?attr/colorPrimaryText"
+                android:textColorHint="?attr/colorSecondaryText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSecondary"
+        android:textSize="@dimen/primary_text_size"
+        android:textColor="?attr/colorSecondaryText"
+        android:id="@+id/accept_button"
+        android:text="@string/accept"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+</LinearLayout>
+</ScrollView>

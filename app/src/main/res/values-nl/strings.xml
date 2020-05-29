@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_services">Zenders</string>
+    <string name="title_player">Radio speler</string>
+    <string name="title_search">Zoeken</string>
+    <string name="toolbar_title_list">Zender overzicht</string>
+    <string name="toolbar_title_player">Radio</string>
+
+    <string name="name_text">Naam</string>
+    <string name="search_by_recommendation">Aanbevelingen</string>
+    <string name="search_by_location">Afstand</string>
+    <string name="distance_seek_description">Afstand</string>
+    <string name="enable_recommendation">Aanbevelingen</string>
+    <string name="genre_name">Genre</string>
+    <string name="search_text">Zoeken</string>
+
+    <string name="distance_unit">%1$d km</string>
+    <string name="filter_key_value_text">%1$s=%2$s</string>
+    <string name="search_epg">EPG programma informatie ophalen…</string>
+    <string name="example_schedule_text">02.07.2019 09:00</string>
+    <string name="program_label">Naam van het programma</string>
+    <string name="program_description">Beschrijving van het programma</string>
+
+    <string-array name="user_groups">
+        <item>niet gespecifieerd</item>
+        <!--
+        <item>Jonger dan 8</item>
+        <item>8 tot 15</item>
+        -->
+        <item>16 tot 20</item>
+        <item>21 tot 29</item>
+        <item>30 tot 40</item>
+        <item>41 tot 50</item>
+        <item>51 tot 60</item>
+        <item>ouder dan 61</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>niet gespecifieerd</item>
+        <item>X</item>
+        <item>vrouw</item>
+        <item>man</item>
+    </string-array>
+
+    <string name="header_text_collect_data">Verzamelen van gebruikersdata</string>
+    <string name="description_text_collect_data"> De app mag gebruikersdata verzamelen om mijn ervaring te verbeteren. </string>
+    <string name="privacy_collect_data_link" translatable="true">Gelieve <a href="https://www.hradio.eu/privacy">hier</a> de privacy verklaring te lezen</string>
+    <string name="agree_text_collect_data" translatable="true">Door te klikken op \'Accepteren\' verklaart u de privacy verklaring gelezen te hebben en gaat u akkoord met het verwerken van uw persoonlijke gegevens.</string>
+    <string name="email">E-mailadres: </string>
+    <string name="decline">Nee, liever niet</string>
+    <string name="accept">Ja, ik stem toe</string>
+    <string name="allow_location">Locatie</string>
+    <string name="allow_country">Land</string>
+    <string name="location_permission_denied">Om dit item te kunnen gebruiken, hebben we je locatie nodig.</string>
+    <string name="error_reading_location">Locatie niet beschikbaar</string>
+    <string name="enable_distance_card_view">locatie</string>
+    <string name="data_collection_options">Verzamelen van gebruikersdata</string>
+    <string name="offline_mode">Offline modus</string>
+    <string name="settings">Instellingen</string>
+    <string name="weight_recommender">Configureer je aanbevelingen</string>
+    <string name="save_action">Opslaan</string>
+    <string name="search_recommendations">Er zijn geen aanbevelingen beschikbaar</string>
+    <string name="recommendations_display_text">Voor jou aanbevolen:</string>
+
+    <string name="hradio_disclaimer">HRadio</string>
+    <string name="hradio_notification">HRadio</string>
+
+    <string name="select_podcasts">Selecteer een podcast</string>
+    <string name="no_epg_found">Programma informatie niet gevonden</string>
+    <string name="back">Terug</string>
+    <string name="next">Volgende</string>
+
+    <string name="true_text">Juist</string>
+    <string name="false_text">Fout</string>
+    <string name="questionaire">Survey</string>
+    <string name="programme_name_label"> from %1$s to %2$s</string>
+    <string name="car_mode">Auto modus</string>
+    <string name="title_favorites">Favorieten</string>
+
+    <string name="title_webview">WebView</string>
+    <string name="send">Verstuur</string>
+
+    <string name="currently_running">Je luistert naar %1$s</string>
+    <string name="title_content">HRadio</string>
+    <string name="provider_name">Zender</string>
+
+    <string name="tuner_type">filter tuners</string>
+    <string name="radio_service_cover">Zender logo</string>
+    <string name="programme">Programma</string>
+    <string name="progress_percentage">%1$d %%</string>
+
+    <string name="tooltip_add_favorites_button">Voeg %1s toe aan mijn lijst met favorieten.</string>
+    <string name="tooltip_remove_favorites_button">Verwijder %1s uit mijn lijst met favorieten.</string>
+    <string name="tooltip_skip_live_button">Terug naar de live-uitzending.</string>
+    <string name="tooltip_podcast_button">Pas je programma aan door podcasts toe te voegen.</string>
+    <string name="tooltip_substitution_image">Je hebt nu de radio-uitzending vervangen door alternatieve inhoud.</string>
+    <string name="tooltip_minimize_image">Terug naar het menu</string>
+    <string name="tooltip_tuner_type_image">Je luistert nu naar %1s.</string>
+    <string name="tooltip_toggle_web_view">Deze zender heeft een webapp. Webview tonen.</string>
+    <string name="tooltip_open_recommendation">Zenders die je misschien ook leuk vindt.</string>
+    <string name="tooltip_open_epg">Bekijk het huidige zendschema.</string>
+
+    <string name="exo_error_load">Deze podcast is momenteel niet beschikbaar!</string>
+    <string name="exo_error_buffer">Onverwachte storing tijdens buffering</string>
+    <string name="exo_error_playback">Onverwachte storing tijdens streaming!</string>
+    <string name="spotify_error">Verbinding met Spotify mislukt, probeer het later nog eens!</string>
+    <string name="network_error">Geen verbinding met het netwerk!</string>
+    <string name="controls_error">Terugspoelen wordt niet ondersteund door DAB/EDI streams.</string>
+    <string name="tuner_error">Opstart van tuners mislukt.</string>
+    <string name="search_error">Geen zenders gevonden.</string>
+    <string name="timeshift_error">Opstart van timeshiftplayer mislukt.</string>
+    <string name="tooltip_epg_image">Je luistert naar:</string>
+
+    <string name="spotify_app_not_installed_description">Het gebruik van Spotify vereist het installeren van de Spotify App.</string>
+    <string name="spotify_app_not_installed_title">Spotify niet geïnstalleerd</string>
+    <string name="disable_substitution">Spotify uitschakelen</string>
+    <string name="enable_spotify">Spotify inschakelen</string>
+    <string name="install_spotify">Spotify installeren</string>
+    <string name="spotify_disabled">Spotify uitgeschakeld</string>
+
+    <string name="error_reading_location_disabled">Voor deze actie moet je GPS ingeschakeld zijn!</string>
+    <string name="open_gps_settings">Instellingen</string>
+    <string name="error_reading_location_permission_denied">Voor deze actie hebben we je locatie nodig.</string>
+    <string name="request_permission_settings">Toestemming geven</string>
+    <string name="federation">Gefedereerd zoeken</string>
+
+
+    <string name="search_depth">Zoekdiepte</string>
+    <string name="search_width">Zoekbreedte</string>
+    <string name="keywords_name">Zoektermen</string>
+
+    <string name="configure_federation">Gefedereerd zoeken configureren</string>
+    <string name="like_list_name">HRadio Favorieten</string>
+    <string name="dislike_list_name">HRadio Zwarte lijst</string>
+    <string name="like_list_description">Liedjes die je leuk vond in de HRadio app.</string>
+    <string name="dislike_list_description">Liedjes die je oversloeg in de HRadio app.</string>
+    <string name="no_dab_fm_tuner">Geen DAB of FM Tuner gevonden</string>
+    <string name="no_ip_tuner">Geen IP tuner gevonden</string>
+    <string name="tuner_not_available">De geselecteerde tuner lijkt niet beschikbaar te zijn.</string>
+    <string name="seeking_not_supported">De huidige tuner ondersteunt zoeken niet.</string>
+    <string name="empty_search_title">Waarde niet ingevuld!</string>
+    <string name="empty_search_descriptiom">Alle zenders zoeken zal een paar minuten duren.</string>
+    <string name="empty_search_accept">Zoeken!</string>
+    <string name="empty_search_decline">Annuleren!</string>
+
+    <string name="playlists_text">Playlist</string>
+    <string name="switch_theme">Donker/Licht-Modus</string>
+
+    <!-- Recommender descriptions -->
+    <string name="mlt_description">Beveelt gelijkaardige zenders aan.</string>
+    <string name="histogram_description">Doet aanbevelingen op basis van afstand.</string>
+    <string name="location_description">Doet aanbevelingen op basis van je locatie.</string>
+    <string name="trend_description">Beveelt trending zenders aan.</string>
+    <string name="expert_description">Aanbevolen door experten.</string>
+    <string name="category_description">Doet aanbevelingen op basis van genre TBA.</string>
+
+    <string name="prudac_error">Geen surveys gevonden</string>
+    <string name="favorite_not_available_error">Geen tuner beschikbaar voor deze zender</string>
+
+    <string name="pref_web_config_location">Webview instellingen</string>
+    <string name="web_config_location_storage">Kies optie naar Webview config document</string>
+    <string name="web_config_location_title">Webview config document</string>
+    <string name="pref_display_title">Display</string>
+    <string name="use_dark_mode_title">Donkere modus</string>
+    <string name="pref_substitution_title">Alternatieve inhoud</string>
+    <string name="substitution_provider_summary">kies een alternatief aanbod</string>
+    <string name="substitution_provider_title">Alternatief aanbod</string>
+    <string name="substitution_playlist_summary">Kies een alternatieve Playlist</string>
+    <string name="substitution_playlist_title">Alternatieve Playlist</string>
+    <string name="pref_general_title">Algemeen</string>
+    <string name="data_usage_summary">Instellingen voor data delen aanpassen</string>
+    <string name="data_usage_title">Data delen</string>
+    <string name="recommender_summary">Persoonlijke aanbevelingen aanpassen</string>
+    <string name="recommender_title">Aanbevelingen</string>
+    <string name="select_playlist">Kies een Playlist</string>
+    <string name="choose_web_url_config">Kies WebView config dcoument</string>
+    <string name="no_substitution_display">Geen selectie</string>
+    <string name="spotify_substitution_display">Spotify</string>
+    <string name="no_substitution_provider">Geen alternatief aanbod geselecteerd</string>
+    <string name="select_substitution_provider">Kies een alternatief</string>
+    <string name="storage_permission_denied">Voor deze actie hebben we je toestemming nodig om de interne opslag van je toestel te lezen</string>
+    <string name="radio_web_toggle">RadioWebView</string>
+    <string name="get_program_podcasts">Voor dit programma zijn ook podcasts beschikbaar</string>
+    <string name="choose_email_client">Kies je Mail-App</string>
+    <string name="recommendations_title">Aanbevelingen</string>
+    <string name="no_service_found">Geen zender gevonden</string>
+    <string name="ok">Voltooid</string>
+    <string name="play_when_scanning_title">scan annuleren</string>
+    <string name="play_when_scanning_description">Terugspoelen is niet mogelijk tijdens het zoeken van zenders</string>
+    <string name="play">Afspelen</string>
+    <string name="api_level_to_low">Je huidige versie van os ondersteunt deze actie niet</string>
+    <string name="api_level_to_low_for_spotify">Je huidige versie van os ondersteunt geen verbinding met Spotify</string>
+
+    <string name="popup_seven_days_not_used">Hey, tof om je terug te zien. \nKan je laten weten waarom we je even kwijt waren?</string>
+    <string name="popup_freetext_hint_why">Vertel ons waarom...</string>
+    <string name="rating_skipping">Wat vond je ervan om een item te vervangen met een liedje naar keuze? Beoordeel je ervaring.</string>
+    <string name="rating_timeshift">Wat vond je van het timeshiften (terugspoelen, vooruitspoelen)?</string>
+    <string name="rating_favorites">Wat vond je ervan om je favoriete items aan te duiden?</string>
+    <string name="rating_stars">(1 ster = helemaal niet tevreden, 5 sterren = helemaal tevreden)</string>
+
+
+
+    <string name="share_text">Deel je radio met</string>
+    <string name="share_item_subject">Hey, je hebt naar het volgende geluisterd: %1$s</string>
+    <string name="share_item_subject_date">Hey, je hebt al eens eerder naar dit geluisterd %1$s: %2$s</string>
+
+    <string name="share_session_wo_programme">Hey, ik voel me wat alleen, zou je graag samen met me willen luisteren?</string>
+    <string name="share_session_programme">Hey, ik voel me wat alleen en zou graag samen met je willen luisteren %1$s</string>
+
+    <string name="service_search_alert_delete_services">Verwijder servicelijst?</string>
+    <string name="service_search_alert_delete_services_yes">Ja ik stem toe </string>
+    <string name="service_search_alert_delete_services_no">Nee liever niet </string>
+    <string name="service_search_alert_delete_services_cancel">Annuleer</string>
+
+    <string name="general_cancel">Annuleer</string>
+    <string name="general_dont_show_again">Toon dit niet opnieuw</string>
+
+    <string name="cdts_error_no_name_set"> Gelieve eerst je naam in te vullen </string>
+    <string name="cdts_username_length_err">Gelieve een naam tussen 3 en 128 karakters te gebruiken</string>
+
+    <string name="pref_cat_about">Meer</string>
+    <string name="pref_about">over</string>
+    <string name="pref_about_text">Referentie naar gebruikte bibliotheek etc.</string>
+
+    <string name="recommendations_empty_err"> Voeg minimum één radio station toe tot je favorieten om aanbevelingen te krijgen</string>
+
+    <string name="guide_edi_reception_explanation">Digital Audio Broadcasting (DAB) over IP\nVoor meer informatie bezoek het volgende:\n<a href="https://lab.irt.de/hradio-online-demo-of-transparent-dab-distribution-over-ip/">IRT Lab</a></string>
+    <string name="guide_shoutcast_reception_explanation">Het legacy IP radio streaming formaat met gelimiteerde capaciteit in metadata en synchronisatie</string>
+    <string name="guide_dab_reception_explanation">Ontvangst van Digital Audio Broadcast over het netwerk.\nGenereert geen netwerk verkeer en daardoor ook geen kosten.</string>
+</resources>

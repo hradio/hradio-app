@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="mini_player_padding">6dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="primary_text_size">20sp</dimen>
+    <dimen name="secondary_text_size">16sp</dimen>
+    <dimen name="tertiary_text_size">12sp</dimen>
+    <dimen name="search_form_padding">8dp</dimen>
+    <dimen name="cardview_search_form_margin">2dp</dimen>
+    <dimen name="cardview_search_form_radius">6dp</dimen>
+    <dimen name="cardview_search_form_padding">12dp</dimen>
+    <dimen name="cardview_search_form_elvation">6dp</dimen>
+    <dimen name="search_form_primary_text">20sp</dimen>
+    <dimen name="search_form_secondary_text">12sp</dimen>
+    <dimen name="grid_cardview_margin">10dp</dimen>
+    <dimen name="cardview_epg_item_margin">1dp</dimen>
+    <dimen name="epg_padding">2dp</dimen>
+    <dimen name="minimize_button_size">35dp</dimen>
+    <dimen name="miniplayer_height">68dp</dimen>
+    <dimen name="notificationPrimaryTextSize">12sp</dimen>
+    <dimen name="notificationSecondarySize">10sp</dimen>
+    <dimen name="bottom_navigation_view_height">@dimen/miniplayer_height</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="quartiary_text_size">10sp</dimen>
+
+    <dimen name="car_seek_bar_thickness">10dp</dimen>
+    <dimen name="car_seek_bar_thumb_size">35dp</dimen>
+    <dimen name="searchform_search_button_margin_vertical">50dp</dimen>
+    <dimen name="preferenceDistanceShort">6dp</dimen>
+    <dimen name="preferenceDistanceLong">10dp</dimen>
+    <dimen name="car_primary_text">30sp</dimen>
+    <dimen name="car_secondary_text">25sp</dimen>
+    <dimen name="car_tertiary_text">20sp</dimen>
+    <dimen name="car_timeshift_height">100dp</dimen>
+    <dimen name="car_peak_height">36dp</dimen>
+    <dimen name="car_peak_height_with_margin">58dp</dimen>
+</resources>

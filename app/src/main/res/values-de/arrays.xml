@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="popup_app_not_used_items">
+    <item>Ich habe technische Probleme mit der App</item>
+    <item>Persönliche Gründe (z.B. keine Zeit, etc.)</item>
+    <item>Das Konzept der App ist anders als ich es mir vorgestellt habe</item>
+    <item>Ich benutze keine Radio Apps</item>
+    <item>Andere Gründe...</item>
+</string-array>
+</resources>

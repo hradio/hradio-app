@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/cardview_search_form_margin"
+    app:cardBackgroundColor="?attr/colorSecondary"
+    app:cardCornerRadius="@dimen/cardview_search_form_radius"
+    app:contentPadding="@dimen/cardview_search_form_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/weight_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mini_player_padding"
+                android:layout_marginEnd="@dimen/mini_player_padding"
+                android:layout_gravity="center"
+                android:textColor="?attr/colorPrimaryText"
+                android:ems="2"
+                android:text="1.1"
+                android:inputType="number|numberDecimal"
+                android:textAppearance="?attr/textAppearanceListItem"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:textColor="?attr/colorPrimaryText"
+                android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/recommender_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/selected_recommender_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <ImageButton
+                        android:id="@+id/info_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_info_white_24"
+                        android:background="?android:selectableItemBackground"
+                        android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/recommender_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorPrimaryText"
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="@dimen/mini_player_padding"
+                    android:layout_marginEnd="@dimen/mini_player_padding"
+                    android:textSize="@dimen/primary_text_size"
+                    android:gravity="start" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_centerInParent="true"
+                android:textAppearance="?attr/textAppearanceListItem" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+

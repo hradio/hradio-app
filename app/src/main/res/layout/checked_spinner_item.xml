@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/check_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/list_item_spacing"
+    android:paddingTop="@dimen/list_item_spacing_half"
+    android:paddingRight="@dimen/list_item_spacing"
+    android:paddingBottom="@dimen/list_item_spacing_half"
+    android:background="?attr/colorSecondary"
+    android:layout_margin="1dp"
+    android:textColor="?attr/colorPrimaryText"
+    android:textSize="@dimen/primary_text_size"
+    app:buttonTint="?attr/colorSecondaryText"
+    tools:text="Hello" />

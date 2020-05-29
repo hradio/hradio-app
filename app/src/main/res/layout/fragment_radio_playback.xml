@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/cover_image_view"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/outline_radio_white_48dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/title_panel"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_panel"
+        app:layout_constraintTop_toBottomOf="@id/cover_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/programme_titles">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:id="@+id/track_title_container"
+            app:layout_constraintStart_toEndOf="@id/spotify_like_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/song_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mini_player_padding"
+                android:textAlignment="textStart"
+                android:textColor="?attr/colorPrimaryText"
+                android:textSize="@dimen/primary_text_size"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="@dimen/tertiary_text_size"
+                app:autoSizeMaxTextSize="@dimen/primary_text_size"
+                app:autoSizeStepGranularity="2sp"
+                android:gravity="start" />
+
+            <TextView
+                android:id="@+id/artist_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/content"
+                android:textAlignment="textStart"
+                android:textColor="?attr/colorSecondaryText"
+                android:textSize="@dimen/secondary_text_size"
+                android:singleLine="true"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="@dimen/tertiary_text_size"
+                app:autoSizeMaxTextSize="@dimen/secondary_text_size"
+                app:autoSizeStepGranularity="2sp"
+                android:gravity="start" />
+        </LinearLayout>
+
+        <lmu.hradio.hradioshowcase.view.component.TrackLikeButton
+            android:id="@+id/spotify_like_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/track_title_container"
+            app:layout_constraintBottom_toBottomOf="@id/track_title_container"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/epg_badge_image_view"
+            android:src="@drawable/epg_badge"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/programme_titles"
+            app:layout_constraintBottom_toBottomOf="@id/programme_titles"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:id="@+id/programme_titles"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/epg_badge_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_panel"
+        app:layout_constraintBottom_toTopOf="@id/program_timeshift_list">
+
+        <TextView
+            android:id="@+id/programme_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/mini_player_padding"
+            android:textSize="@dimen/primary_text_size"
+            android:textAlignment="textStart"
+            android:textColor="?attr/colorPrimaryText"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="@dimen/tertiary_text_size"
+            app:autoSizeMaxTextSize="@dimen/primary_text_size"
+            app:autoSizeStepGranularity="2sp"
+            android:paddingLeft="@dimen/mini_player_padding"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/programme_schedule_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/mini_player_padding"
+            android:textSize="@dimen/secondary_text_size"
+            android:textAlignment="textStart"
+            android:textColor="?attr/colorSecondaryText"
+            android:layout_marginBottom="2dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="@dimen/tertiary_text_size"
+            app:autoSizeMaxTextSize="@dimen/secondary_text_size"
+            app:autoSizeStepGranularity="2sp"
+            android:paddingLeft="@dimen/mini_player_padding"
+            android:gravity="start" />
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/program_timeshift_list"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@id/progress_text"
+            app:layout_constraintTop_toBottomOf="@id/programme_titles"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <SeekBar
+            android:id="@+id/currently_playing_seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            style="@style/ProgressBarTheme"
+            app:layout_constraintTop_toBottomOf="@id/program_timeshift_list"
+            app:layout_constraintBottom_toTopOf="@id/controls_panel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/progress_text"/>
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/secondary_text_size"
+            android:textColor="?attr/colorSecondaryText"
+            app:layout_constraintTop_toTopOf="@id/currently_playing_seek_bar"
+            app:layout_constraintBottom_toBottomOf="@id/currently_playing_seek_bar"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/controls_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/podcat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_wifi_tethering_white_36"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/sharetoken_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share_white_36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+            app:layout_constraintStart_toEndOf="@+id/podcat_button"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/live_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_double_arrow_white_36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/live_button"
+            app:layout_constraintStart_toEndOf="@id/podcat_button"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/skip_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_skip_next_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/play_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/play_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:src="@drawable/round_play_circle_outline_white_48"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/pause_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:src="@drawable/round_pause_circle_outline_white_48"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/skip_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_skip_previous_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/play_button"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

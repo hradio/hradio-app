@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_container"
+    android:background="?attr/timeshift_background"
+    android:layout_margin="4dp"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/skip_cover_view"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:src="@drawable/outline_radio_white_48dp" />
+
+    <ProgressBar
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/skip_loading_progress"/>
+
+    <TextView
+        android:id="@+id/song_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/song"
+        android:textAlignment="center"
+        android:textColor="?attr/colorPrimaryText"
+        android:textSize="@dimen/tertiary_text_size" />
+
+    <TextView
+        android:id="@+id/artist_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/song"
+        android:textAlignment="center"
+        android:textColor="?attr/colorSecondaryText"
+        android:textSize="@dimen/quartiary_text_size" />
+</LinearLayout>

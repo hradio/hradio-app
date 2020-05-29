@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorDisabledDark">#49485a</color>
+    <color name="colorSecondaryDark">#9C212131</color>
+    <color name="colorSecondary100Dark">#212131</color>
+    <color name="colorPrimaryTextDark">#ffffff</color>
+    <color name="colorSecondaryTextDark">#cccccc</color>
+    <color name="colorTertiaryTextDark">#777777</color>
+    <color name="colorAccentDark">#B91BD8C8</color>
+    <color name="colorBackgroundProgressDark">#40212131</color>
+    <color name="black_overlayDark">#66000000</color>
+    <color name="timeshift_backgroundDark">#30212131</color>
+    <color name="colorDrawerDark" >@color/colorSecondary100Dark</color>
+    <color name="timeshift_selected_backgroundDark" >#30cccccc</color>
+    <color name="search_button_colorDark">#9C49485a</color>
+
+    <color name="colorDisabledLight">#49485a</color>
+    <color name="colorPrimaryLight">#ffffff</color>
+    <color name="colorSecondaryLight">#9Ccccccc</color>
+    <color name="colorSecondary100Light">#cccccc</color>
+    <color name="colorPrimaryTextLight">#000000</color>
+    <color name="colorSecondaryTextLight">#212131</color>
+    <color name="colorTertiaryTextLight">#555555</color>
+    <color name="colorAccentLight">#9B1C31</color>
+    <color name="colorBackgroundProgressLight">#40cccccc</color>
+    <color name="black_overlayLight">#66ffffff</color>
+    <color name="timeshift_backgroundLight">#30ffffff</color>
+    <color name="colorDrawerLight" >@color/colorSecondary100Dark</color>
+    <color name="timeshift_selected_backgroundLight" >#30cccccc</color>
+    <color name="search_button_colorLight">#dddddd</color>
+
+
+    <color name="black">#000000</color>
+    <color name="slate_grey">#57595e</color>
+    <color name="slate_grey_light">#6c6e72</color>
+    <color name="dark_from_adam">#12141b</color>
+    <color name="dark">#161821</color>
+    <color name="light_grey">#2c2e33</color>
+
+    <color name="dark_shadow">#33000000</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="scarlet">#d0021b</color>
+    <color name="dark_sky_blue">#3d93d8</color>
+
+    <color name="border_white">#59ffffff</color>
+    <color name="opaque_10_white">#16ffffff</color>
+    <color name="opaque_20_white">#33ffffff</color>
+    <color name="opaque_50_white">#80FFFFFF</color>
+    <color name="warm_grey">#979797</color>
+    <color name="fav_empty_bg">#2B2D35</color>
+
+    <color name="opaque_50_black">#80000000</color>
+    <color name="opaque_40_black">#66000000</color>
+    <color name="opaque_30_black">#4D000000</color>
+    <color name="opaque_20_black">#33000000</color>
+    <color name="opaque_10_black">#1A000000</color>
+    <color name="opaque_5_black">#0D000000</color>
+
+    <color name="seek_bar_background">#6c6e72</color>
+    <color name="seek_bar_progress">#ffffffff</color>
+    <color name="seek_bar_secondary_progress">#979797</color>
+</resources>

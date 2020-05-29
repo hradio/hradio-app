@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ContentFragment">
+
+    <TextView
+        android:id="@+id/services_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSecondary"
+        android:layout_margin="2dp"
+        android:paddingStart="@dimen/mini_player_padding"
+        android:text="@string/title_services"
+        android:textColor="?attr/colorPrimaryText"
+        android:textSize="@dimen/primary_text_size"
+        app:layout_constraintBottom_toTopOf="@id/search_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingLeft="@dimen/mini_player_padding" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:padding="@dimen/mini_player_padding"
+        app:layout_constraintBottom_toTopOf="@id/services_list_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/services_text_view" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_search_white_24"
+            android:id="@+id/search_badge_image_view"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:tint="?attr/colorSecondaryText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:id="@+id/open_search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="?attr/colorSecondaryText"
+            android:textSize="@dimen/primary_text_size"
+            android:text="@string/search_text"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            app:layout_constraintStart_toEndOf="@id/search_badge_image_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="start"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/services_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/favorites_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_container" />
+
+    <TextView
+        android:id="@+id/favorites_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSecondary"
+        android:layout_margin="2dp"
+        android:text="@string/title_favorites"
+        android:textColor="?attr/colorPrimaryText"
+        android:textSize="@dimen/primary_text_size"
+        android:paddingStart="@dimen/mini_player_padding"
+        app:layout_constraintBottom_toTopOf="@id/favorites_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/services_list_container"
+        android:paddingLeft="@dimen/mini_player_padding" />
+
+    <FrameLayout
+        android:id="@+id/favorites_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/favorites_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tuner_type_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/list_item_spacing"
+        android:paddingTop="@dimen/list_item_spacing_half"
+        android:paddingRight="@dimen/list_item_spacing"
+        android:paddingBottom="@dimen/list_item_spacing_half"
+        android:background="?attr/colorSecondary"
+        android:layout_margin="1dp"
+        android:textColor="?attr/colorPrimaryText"
+        android:textSize="@dimen/primary_text_size"
+        app:buttonTint="?attr/colorSecondaryText"
+        tools:text="Hello" >
+    </CheckBox>
+
+    <ImageButton
+        android:id="@+id/tuner_type_check_explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_help_outline_24"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

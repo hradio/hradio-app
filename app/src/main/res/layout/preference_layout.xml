@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/preference_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:padding="@dimen/preferenceDistanceShort"
+    android:background="?attr/colorSecondary">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="?attr/colorPrimaryText"
+        android:textSize="@dimen/primary_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="start" />
+
+    <TextView
+        android:id="@+id/preference_description"
+        android:paddingStart="@dimen/preferenceDistanceShort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="?attr/colorSecondaryText"
+        android:textSize="@dimen/secondary_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        tools:ignore="RtlSymmetry"
+        android:paddingLeft="@dimen/preferenceDistanceShort"
+        android:gravity="start" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

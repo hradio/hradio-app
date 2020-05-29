@@ -1,0 +1,102 @@
+<resources>
+
+    <style name="Theme.App.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorTertiaryText">@color/colorTertiaryTextDark</item>
+        <item name="colorEPGUnselected">@color/colorSecondaryDark</item>
+        <item name="colorDisabled">@color/colorDisabledDark</item>
+        <item name="colorEPGSelected">@color/colorAccentDark</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorSecondaryDark</item>
+        <item name="colorSecondary100">@color/colorSecondary100Dark</item>
+        <item name="colorPrimaryText">@color/colorPrimaryTextDark</item>
+        <item name="colorSecondaryText">@color/colorSecondaryTextDark</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="colorBackgroundProgress">@color/colorBackgroundProgressDark</item>
+        <item name="black_overlay">@color/black_overlayDark</item>
+        <item name="timeshift_background">@color/timeshift_backgroundDark</item>
+        <item name="colorDrawer">@color/colorDrawerDark</item>
+        <item name="timeshift_selected_background">@color/timeshift_selected_backgroundDark</item>
+        <item name="search_button_color">@color/search_button_colorDark</item>
+        <item name="toolbar_theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="toolbar_theme_popup">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="colorNavigationBar">?attr/colorPrimary</item>
+        <item name="android:textViewStyle">@style/PopinsTextViewStyle</item>
+        <item name="android:buttonStyle">@style/PopinsButtonStyle</item>
+    </style>
+
+
+    <!-- Customize your theme here. -->
+
+
+
+    <style name="Theme.App.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorDisabled">@color/colorDisabledLight</item>
+        <item name="colorEPGUnselected">@color/colorSecondaryLight</item>
+        <item name="colorEPGSelected">@color/colorAccentLight</item>
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorSecondary">@color/colorSecondaryLight</item>
+        <item name="colorSecondary100">@color/colorSecondary100Light</item>
+        <item name="colorPrimaryText">@color/colorPrimaryTextLight</item>
+        <item name="colorSecondaryText">@color/colorSecondaryTextLight</item>
+        <item name="colorTertiaryText">@color/colorTertiaryTextLight</item>
+
+        <item name="colorAccent">@color/colorAccentLight</item>
+        <item name="colorBackgroundProgress">@color/colorBackgroundProgressLight</item>
+        <item name="black_overlay">@color/black_overlayLight</item>
+        <item name="colorDrawer">@color/colorDrawerLight</item>
+        <item name="timeshift_selected_background">@color/timeshift_backgroundLight</item>
+        <item name="timeshift_background">@color/timeshift_selected_backgroundLight</item>
+        <item name="search_button_color">@color/search_button_colorLight</item>
+        <item name="toolbar_theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="toolbar_theme_popup">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="colorNavigationBar">?attr/colorSecondaryText</item>
+        <item name="android:textViewStyle">@style/PopinsTextViewStyle</item>
+        <item name="android:buttonStyle">@style/PopinsButtonStyle</item>
+
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+
+    </style>
+
+
+    <style name="PopinsTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">popins</item>
+    </style>
+
+    <style name="PopinsButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">popins</item>
+
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">?attr/black_overlay</item>
+    </style>
+
+    <style name="ToolbarColoredMenuIcon" parent="AppTheme">
+        <item name="android:textColorSecondary">?attr/colorSecondaryText</item>
+    </style>
+
+    <style name="ProgressBarTheme">
+        <item name="colorAccent">?attr/colorAccent</item>
+    </style>
+
+    <style name="tallerBarStyle" parent="ProgressBarTheme">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxHeight">52dp</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+</resources>

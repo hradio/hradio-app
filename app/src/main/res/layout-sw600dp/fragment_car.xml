@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".view.fragment.car.CarFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/car_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <lmu.hradio.hradioshowcase.view.component.FavoriteImageButton
+                android:id="@+id/car_favorites_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:contentDescription="carFavoriteButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp" />
+
+
+            <ImageView
+                android:id="@+id/car_station_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="carStationLogo"
+                app:layout_constraintEnd_toStartOf="@+id/car_headline"
+                app:layout_constraintStart_toEndOf="@+id/car_favorites_button"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp" />
+
+
+            <TextView
+                android:id="@+id/car_headline"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="?attr/colorPrimaryText"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintEnd_toStartOf="@+id/car_radio_mode"
+                app:layout_constraintStart_toEndOf="@+id/car_station_logo"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <ImageView
+                android:id="@+id/car_radio_mode"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="fitCenter"
+                android:gravity="center"
+                android:contentDescription="carRadioMode"
+                app:layout_constraintEnd_toStartOf="@+id/car_mode_toggle"
+                app:layout_constraintStart_toEndOf="@+id/car_headline"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp" />
+
+            <ImageButton
+                android:id="@+id/car_mode_toggle"
+                app:srcCompat="@drawable/ic_radio_white_36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:contentDescription="carModeToggle"
+                app:layout_constraintEnd_toStartOf="@+id/car_settings"
+                app:layout_constraintStart_toEndOf="@+id/car_radio_mode"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/car_settings"
+                app:srcCompat="@drawable/ic_settings_white_36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                android:contentDescription="carSettings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/car_mode_toggle"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/car_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toBottomOf="@+id/car_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/car_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.viewpager.widget.ViewPager>
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/car_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="50dp"
+        app:layout_behavior=".view.component.LockableDragBottomSheetBehavior">
+
+        <FrameLayout
+            android:id="@+id/car_bottom_visible"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:id="@+id/car_rs_open_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:selectableItemBackground"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_list_white_36dp" />
+
+        </FrameLayout>
+
+
+        <include
+        android:id="@+id/car_rs_container"
+        layout="@layout/fragment_car_radioservices_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".view.fragment.search.SearchFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <com.google.android.material.textfield.TextInputLayout
+              android:padding="@dimen/cardview_search_form_padding"
+              android:background="?attr/colorSecondary"
+              android:layout_marginTop="1dp"
+              android:layout_marginBottom="1dp"
+              android:textColorHint="?attr/colorSecondaryText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/name_edit_text"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:ems="10"
+                  android:hint="@string/name_text"
+                  android:inputType="textPersonName"
+                  android:textColor="?attr/colorPrimaryText"
+                  android:textColorHint="?attr/colorSecondaryText"
+                   />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:padding="@dimen/cardview_search_form_padding"
+              android:background="?attr/colorSecondary"
+              android:layout_marginTop="1dp"
+              android:layout_marginBottom="1dp"
+              android:textColorHint="?attr/colorSecondaryText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/genre_edit_text"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:ems="10"
+                  android:hint="@string/genre_name"
+                  android:inputType="textPersonName"
+                  android:textColor="?attr/colorPrimaryText"
+                  android:textColorHint="?attr/colorSecondaryText" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:padding="@dimen/cardview_search_form_padding"
+                    android:background="?attr/colorSecondary"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:textColorHint="?attr/colorSecondaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/provider_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/provider_name"
+                        android:inputType="textPersonName"
+                        android:textColor="?attr/colorPrimaryText"
+                        android:textColorHint="?attr/colorSecondaryText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:padding="@dimen/cardview_search_form_padding"
+                    android:background="?attr/colorSecondary"
+                    android:layout_marginTop="1dp"
+                    android:textColorHint="?attr/colorSecondaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/programme_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/programme"
+                        android:inputType="textPersonName"
+                        android:textColor="?attr/colorPrimaryText"
+                        android:textColorHint="?attr/colorSecondaryText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Switch
+                    android:padding="@dimen/cardview_search_form_padding"
+                    android:background="?attr/colorSecondary"
+                    android:layout_marginTop="@dimen/cardview_search_form_padding"
+                    android:layout_marginBottom="1dp"
+                    android:id="@+id/enable_distance_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/enable_distance_card_view"
+                    android:textColor="?attr/colorPrimaryText"
+                    android:textSize="@dimen/search_form_primary_text" />
+
+          <LinearLayout
+              android:padding="@dimen/cardview_search_form_padding"
+              android:background="?attr/colorSecondary"
+              android:layout_marginTop="1dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:id="@+id/distance_container"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingBottom="6dp"
+                  android:text="@string/distance_seek_description"
+                  android:textColor="?attr/colorPrimaryText"
+                  android:textSize="@dimen/search_form_secondary_text" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <SeekBar
+                      android:id="@+id/distance_seek_bar"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:max="950"
+                      android:layout_weight="5" />
+
+                  <TextView
+                      android:id="@+id/selected_distance_text_view"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:textColor="?attr/colorSecondaryText"
+                      android:textSize="@dimen/search_form_secondary_text" />
+              </LinearLayout>
+
+          </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tuner_type_button"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/cardview_search_form_padding"
+                android:background="?attr/colorSecondary"
+                android:paddingLeft="@dimen/cardview_search_form_padding">
+
+                <TextView
+                    android:id="@+id/tuner_type_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuner_type"
+                    android:textColor="?attr/colorPrimaryText"
+                    android:textSize="@dimen/primary_text_size"
+                    android:layout_marginTop="@dimen/cardview_search_form_padding"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selected_tuner_types_text_view"
+                    android:textColor="?attr/colorSecondaryText"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:paddingBottom="@dimen/mini_player_padding"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tuner_type_title"
+                    android:paddingLeft="@dimen/activity_horizontal_margin" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <Button
+                android:paddingStart="@dimen/cardview_search_form_padding"
+                android:background="?attr/colorSecondary"
+                android:layout_marginTop="@dimen/cardview_search_form_padding"
+                android:textAlignment="textStart"
+                android:id="@+id/federation_button"
+                android:textColor="?attr/colorPrimaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/federation"
+                android:textAllCaps="false"
+                android:paddingLeft="@dimen/cardview_search_form_padding"
+                android:gravity="start" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/empty_frame"/>
+
+  </LinearLayout>
+</ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSecondaryText"
+        android:padding="1dp"
+        android:layout_marginTop="@dimen/cardview_search_form_padding"
+        android:layout_marginBottom="@dimen/cardview_search_form_padding"
+        android:layout_marginEnd="@dimen/cardview_search_form_padding"
+        android:layout_marginStart="@dimen/cardview_search_form_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    <Button
+        android:id="@+id/search_button"
+        android:background="?attr/colorSecondary100"
+        android:textColor="?attr/colorPrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_text"/>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

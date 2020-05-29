@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/miniplayer_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorSecondary"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:paddingEnd="@dimen/mini_player_padding"
+    android:paddingStart="@dimen/mini_player_padding"
+    tools:context=".view.fragment.player.MiniMusicPlayerFragment">
+
+
+    <ImageButton
+        android:id="@+id/fullscreen_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/baseline_keyboard_arrow_up_white_36"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/cover_image_view_container"
+        android:layout_margin="@dimen/mini_player_padding"
+        app:layout_constraintStart_toEndOf="@id/fullscreen_button"
+        >
+
+        <ImageView
+            android:id="@+id/cover_image_view"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@drawable/outline_radio_white_48dp"
+            android:background="@android:color/white"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/song_text_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/mini_player_padding"
+        android:layout_marginRight="@dimen/mini_player_padding"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:gravity="center_vertical"
+        android:textColor="?attr/colorPrimaryText"
+        app:layout_constraintStart_toEndOf="@id/cover_image_view_container"
+        app:layout_constraintEnd_toStartOf="@+id/substitution_logo" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/substitution_logo"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toEndOf="@id/song_text_view"
+        app:layout_constraintEnd_toStartOf="@id/controls_container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/controls_container"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <ImageButton
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/mini_player_padding"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/round_pause_circle_outline_white_48"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/mini_player_padding"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/round_play_circle_outline_white_48" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

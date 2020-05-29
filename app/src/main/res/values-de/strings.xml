@@ -1,0 +1,235 @@
+<resources>
+    <string translatable="false" name="app_name">HRadio</string>
+    <string translatable="false" name="title_home">Home</string>
+    <string translatable="false" name="title_dashboard">Dashboard</string>
+    <string translatable="false" name="title_notifications">Notifications</string>
+    <string translatable="false" name="song">Song</string>
+    <string translatable="false" name="content">Artist</string>
+    <string name="title_services">Sender</string>
+    <string name="title_player">Radio</string>
+    <string name="title_search">Suche</string>
+    <string name="toolbar_title_list">Senderliste</string>
+    <string name="toolbar_title_player">Radio</string>
+
+    <string name="name_text">Suche nach Sendernamen z.B. Bayern,Fritz,MNM</string>
+    <string name="search_by_recommendation">Empfehlung</string>
+    <string name="search_by_location">Umkreis</string>
+    <string name="distance_seek_description">Sender im Umkreis von:</string>
+    <string name="enable_recommendation">Empfehlung</string>
+    <string name="genre_name">Suche nach Genres z.B. Pop,Rock</string>
+    <string name="search_text">Suchen</string>
+
+    <string name="distance_unit">%1$d km</string>
+    <string name="filter_key_value_text">%1$s=%2$s</string>
+    <string name="search_epg">Suche EPG-Informationen ...</string>
+    <string name="example_schedule_text">02.07.2019 09:00</string>
+    <string name="program_label">Programmname</string>
+    <string name="program_description">Programmbeschreibung</string>
+
+    <string-array name="recommendation_typ_array">
+        <item>Histogramm</item>
+        <item>Zufall</item>
+    </string-array>
+
+    <string-array name="search_typ">
+        <item>IP</item>
+        <item>FM</item>
+        <item>DAB</item>
+    </string-array>
+
+    <string-array name="user_groups">
+        <item>keine Angaben</item>
+        <!--
+        <item>Unter 8</item>
+        <item>8 bis 15</item>
+        -->
+        <item>16 bis 20</item>
+        <item>21 bis 29</item>
+        <item>30 bis 40</item>
+        <item>41 bis 50</item>
+        <item>51 bis 60</item>
+        <item>ab 61</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>keine Angaben</item>
+        <item>divers</item>
+        <item>weiblich</item>
+        <item>männlich</item>
+    </string-array>
+
+    <string name="header_text_collect_data">Erhebung von Nutzungsdaten</string>
+    <string name="description_text_collect_data">Erlaube uns Nutzungsdaten zu erfassen, um passendere Sender zu empfehlen.</string>
+    <string name="privacy_collect_data_link" translatable="true">Bitte lesen Sie den Datenschutzhinweis <a href="https://www.hradio.eu/privacy">hier</a></string>
+    <string name="agree_text_collect_data" translatable="true">Durch das drücken von \'Annehmen\' bestätigen Sie den Datenschutzhinweis gelesen zu haben und mit der Datenverarbeitung einverstanden sind</string>
+    <string name="email">E-Mail-Adresse: </string>
+    <string name="decline">Ablehnen</string>
+    <string name="accept">Annehmen</string>
+    <string name="allow_location">Standort</string>
+    <string name="allow_country">Land</string>
+    <string name="location_permission_denied">Für dieses Feature werden Standortberechtigungen benötigt.</string>
+    <string name="error_reading_location">Standort konnte nicht gelesen werden!</string>
+    <string name="enable_distance_card_view">Umkreis</string>
+    <string name="data_collection_options">Datennutzung</string>
+    <string name="offline_mode">Offline Modus</string>
+    <string name="settings">Einstellungen</string>
+    <string name="weight_recommender">Konfigurier dein Empfehlungssysytem</string>
+    <string name="save_action">Speichern</string>
+    <string name="search_recommendations">Es wurden keine Empfehlungen gefunden</string>
+    <string name="recommendations_display_text">Diese Sender könnten dir auch gefallen:</string>
+
+    <string name="hradio_disclaimer">HRadio</string>
+    <string name="hradio_notification">HRadio</string>
+    <string name="select_podcasts">Wähle einen Podcast</string>
+    <string name="no_epg_found">EPG Informationen wurden nicht gefunden</string>
+    <string name="back">zurück</string>
+    <string name="next">weiter</string>
+
+    <string name="true_text">Wahr</string>
+    <string name="false_text">Falsch</string>
+    <string name="questionaire">Fragebogen</string>
+    <string name="programme_name_label">von %1$s bis %2$s Uhr</string>
+    <string name="car_mode">Automodus</string>
+    <string name="title_favorites">Favoriten</string>
+
+    <string name="title_webview">WebView</string>
+    <string name="send">abschicken</string>
+    <string name="currently_running">Du hörst gerade %1$s</string>
+    <string name="title_content">HRadio</string>
+    <string name="provider_name">Suche nach Sendergruppe z.B. BR,RBB,VRT</string>
+    <string name="tuner_type">Übertragungsformat</string>
+    <string name="radio_service_cover">Sender Bild</string>
+    <string name="programme">Suche nach Sendungsname z.B. Die Frühaufdreher oder Radiowelt</string>
+    <string name="progress_percentage">%1$d %%</string>
+    <string name="tooltip_add_favorites_button">Füge %1s zu deinen Favoriten hinzu.</string>
+    <string name="tooltip_remove_favorites_button">Entferne %1s aus deinen Favoriten.</string>
+    <string name="tooltip_skip_live_button">Springe zurück ins Live-Programm</string>
+    <string name="tooltip_podcast_button">Suche nach Podcasts passend zum Programm.</string>
+    <string name="tooltip_substitution_image">Dieser Inhalt ersetzt das Live-Programm</string>
+    <string name="tooltip_minimize_image">Zurück zur Übersicht.</string>
+    <string name="tooltip_tuner_type_image">Du hörst gerade einen %1s Sender.</string>
+    <string name="tooltip_toggle_web_view">Dieser Sender hat eine eigene Webapp. Nutze die Sender spezifische Ansicht.</string>
+    <string name="tooltip_open_recommendation">Diese Sender könnten dir auch gefallen.</string>
+    <string name="tooltip_open_epg">Sieh dir das Programm zum Sender an.</string>
+
+    <string name="exo_error_load">Der gewählte Podcast konnte nicht geladen werden!</string>
+    <string name="exo_error_buffer">Das Buffering wurde unterbrochen</string>
+    <string name="exo_error_playback">Leider ist ein Fehler während des Streamings aufgetreten!</string>
+    <string name="spotify_error">Es konnte keine Verbindung mit Spotify hergestellt werden, versuche es später erneut!</string>
+    <string name="network_error">Keine Internetverbindung!</string>
+    <string name="controls_error">Zurück skipping wird aktuell nur von DAB/EDI-Streams unterstützt.</string>
+    <string name="tuner_error">Tuner konnte nicht geladen werden.</string>
+    <string name="search_error">Leider wurden keine passenden Sender gefunden</string>
+    <string name="timeshift_error">Timeshiftplayer konnte nicht gestartet werden</string>
+    <string name="tooltip_epg_image">Es läuft gerade:</string>
+    <string name="spotify_app_not_installed_description">Um Spotify in der App zu nutzen wird die Spotify App benötigt.</string>
+    <string name="spotify_app_not_installed_title">Spotify nicht installiert</string>
+    <string name="disable_substitution">Spotify deaktivieren</string>
+    <string name="enable_spotify">Spotify aktivieren</string>
+    <string name="install_spotify">Spotify installieren</string>
+    <string name="spotify_disabled">Spotify deaktiviert</string>
+    <string name="error_reading_location_disabled">Für dieses Feature muss GPS aktiviert werden!</string>
+    <string name="open_gps_settings">Einstellungen</string>
+    <string name="error_reading_location_permission_denied">Für dieses Feature werden Standortberechtigungen benötigt</string>
+    <string name="request_permission_settings">Berechtigung erteilen</string>
+    <string name="federation">Federation</string>
+
+    <string name="search_depth">Suchtiefe</string>
+    <string name="search_width">Suchbreite</string>
+    <string name="keywords_name">Keywords</string>
+    <string name="configure_federation">Federation konfigurieren</string>
+    <string name="like_list_name">HRadio Favoriten</string>
+    <string name="dislike_list_name">HRadio Blacklist</string>
+    <string name="like_list_description">Tracks die du in der HRadio App geliked hast.</string>
+    <string name="dislike_list_description">Tracks die du in der HRadio App geskipped hast</string>
+    <string name="no_dab_fm_tuner">Kein DAB oder FM Tuner gefunden</string>
+    <string name="no_ip_tuner">Kein IP tuner gefunden</string>
+    <string name="tuner_not_available">Der gewählte Tuner steht aktuell nicht zur Verfügung.</string>
+    <string name="seeking_not_supported">Der gewählte Tuner unterstützt kein Spulen.</string>
+    <string name="empty_search_title">Alle Suchfelder leer!</string>
+    <string name="empty_search_descriptiom">Es wurden keine Einschränkungen gesetzt. Die Suche wird möglicherweise etwas länger dauern.</string>
+    <string name="empty_search_accept">Dennoch suchen!</string>
+    <string name="empty_search_decline">Abbruch</string>
+
+    <string name="playlists_text">Playlists</string>
+    <string name="switch_theme">Dark/Light-Mode</string>
+
+    <!-- Recommender descriptions -->
+    <string name="mlt_description">Generiert Empfehlungen basierend auf ähnlichen Sendern.</string>
+    <string name="histogram_description">Generiert Empfehlungen basierend auf der Distanz zum Sendern.</string>
+    <string name="location_description">Generiert Empfehlungen basierend auf dem Standort.</string>
+    <string name="trend_description">Generiert Empfehlungen basierend auf dem aktuellen Trend</string>
+    <string name="expert_description">Generiert Empfehlungen basierend auf Experten Einschätzungen.</string>
+    <string name="category_description">Generiert Empfehlungen basierend auf dem TBA-Genre</string>
+    <string name="prudac_error">Keine Umfragen gefunden</string>
+    <string name="favorite_not_available_error">Für den gewählten Sender steht aktuell kein Tuner zur Verfügung</string>
+
+    <string name="pref_web_config_location">Webview Einstellungen</string>
+    <string name="web_config_location_storage">Definier den Pfad zur Webview-Config-Datei</string>
+    <string name="web_config_location_title">Webview-Config-Datei</string>
+    <string name="pref_display_title">Anzeige</string>
+    <string name="use_dark_mode_title">Dunkle Darstellung</string>
+    <string name="pref_substitution_title">Substitution</string>
+    <string name="substitution_provider_summary">Wähle deinen Substitution-Dienst</string>
+    <string name="substitution_provider_title">Substitution-Dienste</string>
+    <string name="substitution_playlist_summary">Wähle deine Substitution Playlist</string>
+    <string name="substitution_playlist_title">Substitution Playlist</string>
+    <string name="pref_general_title">Allgemein</string>
+    <string name="data_usage_summary">Erlaube uns annonyme Nutzungsdaten zu erfassen</string>
+    <string name="data_usage_title">Datennutzung</string>
+    <string name="recommender_summary">Konfigurier dein Empfehlungssystem</string>
+    <string name="recommender_title">Empfehlungssystem</string>
+    <string name="select_playlist">Wähle eine Playlist</string>
+    <string name="choose_web_url_config">Setze die Webview-Config-Datei</string>
+    <string name="no_substitution_display">Keine Auswahl</string>
+    <string name="spotify_substitution_display">Spotify</string>
+    <string name="no_substitution_provider">Kein Substitutiondienst ausgewählt</string>
+    <string name="select_substitution_provider">Wähle einen Substitutiondienst</string>
+    <string name="storage_permission_denied">Dieses Feature benötigt die Berechtigung den Speicher zu lesen</string>
+    <string name="radio_web_toggle">RadioWebView</string>
+    <string name="get_program_podcasts">Podcasts zum Programm verfügbar</string>
+    <string name="choose_email_client">Wähle deine Mail-App</string>
+    <string name="recommendations_title">Empfehlungen</string>
+    <string name="no_service_found">Keine Sender in der Favoritenliste</string>
+    <string name="ok">Fertig</string>
+    <string name="play_when_scanning_title">Scan unterbrechen</string>
+    <string name="play_when_scanning_description">Das Abspielen eines Senders ist während der Suche nicht möglich</string>
+    <string name="play">Spielen</string>
+    <string name="api_level_to_low">Das Feature wird von deiner Android version nicht unterstützt</string>
+    <string name="api_level_to_low_for_spotify">Deine aktuelle Android Version unterstützt keine Verbindung mit Spotify</string>
+
+    <string name="share_text">Dein Radio teilen mit</string>
+    <string name="share_item_subject">Hey, das musst Du dir anhören: %1$s</string>
+    <string name="share_item_subject_date">Hey, das musst Du dir bis spätestens %1$s anhören: %2$s</string>
+
+    <string name="share_session_wo_programme">Hey, ich bin einsam und würde gerne mit dir gemeinsam hören</string>
+    <string name="share_session_programme">Hey, ich bin einsam und würde gerne mit dir gemeinsam %1$s hören</string>
+
+    <string name="service_search_alert_delete_services">Serviceliste löschen?</string>
+    <string name="service_search_alert_delete_services_yes">Ja, bitte</string>
+    <string name="service_search_alert_delete_services_no">Nein, danke</string>
+
+    <string name="service_search_alert_delete_services_cancel">Abbrechen</string>
+
+    <string name="general_cancel">Abbrechen</string>
+    <string name="general_dont_show_again">Nicht mehr anzeigen</string>
+
+    <string name="cdts_error_no_name_set">Bitte zuerst einen Namen angeben</string>
+    <string name="cdts_username_length_err">Bitte benutze einen Namen zwischen 3 und 128 Zeichen</string>
+
+    <string name="popup_seven_days_not_used">Hey, du warst lange nicht hier.\nBitte sag uns wieso wir dich verloren haben</string>
+    <string name="popup_freetext_hint_why">Erzähle uns warum</string>
+    <string name="rating_skipping">Bitte bewerte deine Erfahrung mit dem Austausch von Inhalten?</string>
+    <string name="rating_timeshift">Bitte bewerte deine Erfahrung mit dem Timeshifting?</string>
+    <string name="rating_favorites">Bitte bewerte deine Erfahrung mit den Favoriten?</string>
+    <string name="rating_stars">(1 Stern = mangelhaft, 5 Sterne = hervorragend)</string>
+    <string name="pref_cat_about">Weiteres</string>
+    <string name="pref_about">Über</string>
+    <string name="pref_about_text">Hinweise zu verwendeten Bibliotheken etc.</string>
+
+    <string name="recommendations_empty_err">Bitte füge mindestens einen Sender deinen Favoriten hinzu</string>
+
+    <string name="guide_edi_reception_explanation">Digital Audio Broadcasting (DAB) über IP\nFür mehr Informationen besuche:\n<a href="https://lab.irt.de/hradio-online-demo-of-transparent-dab-distribution-over-ip/">IRT Lab</a></string>
+    <string name="guide_shoutcast_reception_explanation">Klassisches IP Radio-Streaming mit beschränkter funktionalität</string>
+    <string name="guide_dab_reception_explanation">Empfang von Digital Audio Broadcast (DAB).\nErzeugt keinen Netzwerkverkehr.</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="?attr/colorSecondary" />
+            <gradient android:angle="-90" android:startColor="?attr/colorPrimary" android:endColor="?attr/colorSecondary"  />
+        </shape>
+    </item>
+    <item >
+        <shape android:shape="rectangle"  >
+            <corners android:radius="3dip" />
+            <stroke android:width="1dip" android:color="?attr/colorPrimary" />
+            <gradient android:angle="-90" android:startColor="?attr/colorSecondary" android:endColor="?attr/colorPrimary" />
+        </shape>
+    </item>
+</selector>
